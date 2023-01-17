@@ -1,0 +1,8 @@
+{
+  "name": "microservices-test",
+  "buildpacks": [
+    {
+      "url": "heroku/maven"
+    }
+  ]
+}
