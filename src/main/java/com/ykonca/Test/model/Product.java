@@ -1,16 +1,13 @@
 package com.ykonca.Test.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import javax.persistence.*;
-
 import java.time.LocalDateTime;
 
+@Data
 @Entity
 @Table(name = "product")
-@Getter
-@Setter
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
