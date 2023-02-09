@@ -5,7 +5,7 @@ services:
     environment:
       POSTGRES_DB: mydatabest
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 123456
+      POSTGRES_PASSWORD: ******
   web:
     image: test-app
     ports:
@@ -13,4 +13,4 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://10.0.51.20:5432/mydatabasetest?currentSchema=sc_product&ssl=false
       SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: 123456
+      SPRING_DATASOURCE_PASSWORD: ******
