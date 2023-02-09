@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: mydatabest
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+  web:
+    image: test-app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://10.0.51.20:5432/mydatabasetest?currentSchema=sc_product&ssl=false
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 123456
